@@ -5,6 +5,10 @@ body{
     font-size: 1rem;
 }
 
+h1, h2, h3 {
+    font-family: "Raleway", sans-serif;;
+}
+
 .header {
     box-sizing: border-box;
     width: 300px;
@@ -37,6 +41,7 @@ body{
     text-align: center;
     font-size: 24px;
     margin: 0 0 18px 0;
+    font-weight: 600;
 }
 
 .socialLinks {
@@ -107,6 +112,9 @@ body{
 
 .content {
     margin-left: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer {
@@ -375,4 +383,72 @@ body{
 
 .val {
     float: right;
+}
+
+.resume {
+    padding: 50px 15px;
+}
+
+.resume h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+}
+
+.resume h2::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    display: block;
+    background-color: #149ddd;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.resume > p {
+    margin-bottom: 30px;
+}
+
+.resumeContent {
+    padding-top: 10px;
+}
+
+.resumeContent h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20x;
+}
+
+.resumeText {
+    box-sizing: border-box;
+    padding: 0 0 15px 20px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+}
+
+.resumeText::before {
+    content: "";
+    display: block;
+    height: 16px;
+    width: 16px;
+    border: 2px solid #1f5297;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    background: #fff;
+    left: -9px;
+}
+
+.resumeText h4 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.resumeText p, .resumeText ul {
+    margin-bottom: 0;
 }
