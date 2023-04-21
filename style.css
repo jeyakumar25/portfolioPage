@@ -413,14 +413,10 @@ h1, h2, h3 {
     margin-bottom: 30px;
 }
 
-.resumeContent {
-    padding-top: 10px;
-}
-
-.resumeContent h3 {
+.resumeContent > div > h3 {
     font-size: 26px;
     font-weight: 700;
-    margin-bottom: 20x;
+    margin: 20px 0 20px 0;
 }
 
 .resumeText {
@@ -447,8 +443,21 @@ h1, h2, h3 {
     font-size: 18px;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
+    margin: 0 0 10px 0;
 }
 
-.resumeText p, .resumeText ul {
-    margin-bottom: 0;
+.resumeText p {
+    margin: 0 0 20px 0;
+}
+
+.resumeText ul li {
+    margin: 0 0 10px 0;
+}
+
+.resumeText ul {
+    margin: 0 0 10px 0;
+}
+
+.r1 {
+    padding-bottom: 40px;
 }
