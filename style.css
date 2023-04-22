@@ -5,7 +5,7 @@ body{
     font-size: 1rem;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif;;
 }
 
@@ -387,6 +387,7 @@ h1, h2, h3 {
 
 .resume {
     padding: 50px 15px;
+    margin-bottom: 20px;
 }
 
 .resume h2 {
@@ -460,4 +461,124 @@ h1, h2, h3 {
 
 .r1 {
     padding-bottom: 40px;
+}
+
+.resumeText p:first-of-type {
+    font-style: italic;
+}
+
+.resumeText h5 {
+    font-size: 16px;
+    background: #e4edf9;
+    font-weight: 600;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+}
+
+.portfolio {
+    padding: 60px 10px;
+    background-color: #f5f8fd;
+}
+
+.portfolio h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+}
+
+.portfolio h2::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    display: block;
+    background-color: #149ddd;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.portfolio > p {
+    margin-bottom: 30px;
+}
+
+.portfolio ul {
+    padding: 10px 20px;
+    margin: 0 auto 30px auto;
+    background-color: white;
+    box-sizing: border-box;
+    width: 292px;
+    border-radius: 25px;
+}
+
+.portfolio ul li {
+    list-style: none;
+    display: inline;
+    padding: 0 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio ul li:hover {
+    color: #149ddd;
+}
+
+.portfolioImg img {
+    width: 100%;
+}
+
+.portfolioImgGallery > div {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+.portfolioImg {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.portfolioImg::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolioImg:hover::before {
+    opacity: 1;
+}
+
+.portfolioLink {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.portfolioLink a {
+    display: block;
+    width: 50%;
+    color: white;
+    background-color: rgba(20, 157, 221, 0.75);
+    z-index: 3;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.portfolioLink a:hover {
+    background-color: rgba(20, 157, 221, 0.95);
 }
