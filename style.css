@@ -541,6 +541,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     top: 0;
     left: 0;
+    overflow: hidden;
 }
 
 .portfolioImg::before {
@@ -565,7 +566,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -37px;
+    transition: all 0.3s ease-in-out;
 }
 
 .portfolioLink a {
@@ -581,4 +583,108 @@ h1, h2, h3, h4, h5, h6 {
 
 .portfolioLink a:hover {
     background-color: rgba(20, 157, 221, 0.95);
+}
+
+.portfolioImg:hover .portfolioLink {
+    bottom: 0;
+}
+
+.services {
+    padding: 60px 10px;
+}
+
+.services h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+}
+
+.services h2::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    display: block;
+    background-color: #149ddd;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.servicesIcon {
+    background-color: #149ddd;
+    border: 1px solid #149ddd;
+    border-radius: 25px;
+    height: 51px;
+    width: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    transition: all 0.3s ease-in-out;
+}
+
+.servicesCard:hover .servicesIcon {
+    background-color: white;
+}
+
+.servicesCard:hover .servicesIcon i {
+    color: #149ddd;
+}
+
+.servicesContent h4 {
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.servicesContent h4:hover {
+    color: #149ddd;
+}
+
+.servicesContent p {
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.servicesContent h4, .servicesContent p {
+    margin-left: 77px;
+}
+
+.servicesIcon i {
+    color: #fff;
+    font-size: 24px;
+    line-height: 0;
+}
+
+.services > p {
+    margin-bottom: 30px;
+}
+
+.testmonials {
+    padding: 60px 10px;
+    background-color: #f5f8fd;
+}
+
+.testmonials h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+}
+
+.testmonials h2::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    display: block;
+    background-color: #149ddd;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
