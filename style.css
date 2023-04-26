@@ -688,3 +688,63 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     bottom: 0;
 }
+
+.tesimonialsCarousel img {
+    display: block;
+    width: 90px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.tesimonialsCaption p i {
+    color: #c3e8fa;
+    font-size: 26px;
+}
+
+.tesimonialsCaption p {
+    font-style: italic;
+    padding: 15px 15px;
+}
+
+.tesimonialsCaption {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.tesimonialsCaption::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 20px solid #fff;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 20px);
+}
+
+.testmonials > p {
+    margin-bottom: 35px;
+}
+
+.carouselButton {
+    position: absolute;
+    bottom: -45px;
+}
+
+.carouselButton [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #149ddd;
+    opacity: 1;
+}
+
+.carouselButton .active {
+    background-color: #149ddd;
+}
