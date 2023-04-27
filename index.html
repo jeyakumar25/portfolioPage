@@ -409,14 +409,14 @@
                 <h2>Testmonials</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam accusantium magnam earum id perferendis impedit vel possimus, 
                     necessitatibus cum inventore dolore odit sed aliquam nemo numquam dignissimos reiciendis ducimus minus.</p>
-                    <div id="carouselExampleIndicators" class="carousel slide">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators carouselButton">
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active carouselButtonItem" aria-current="true" aria-label="Slide 1"></button>
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="carouselButtonItem" aria-label="Slide 2"></button>
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="carouselButtonItem" aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
-                          <div class="carousel-item active tesimonialsCarousel">
+                          <div class="carousel-item active tesimonialsCarousel" data-bs-interval="5000">
                             <div class="tesimonialsCaption">
                                 <p>
                                     <i class="fa-solid fa-quote-left"></i>
@@ -425,10 +425,10 @@
                                 </p>
                             </div>
                             <img src="./images/testimonials/testimonials-1.jpg" class="" alt="...">
-                            <h4></h4>
-                            <h5></h5>
+                            <h3>Saul Goodman</h3>
+                            <h4>Ceo &amp; Founder</h4>
                           </div>
-                          <div class="carousel-item tesimonialsCarousel">
+                          <div class="carousel-item tesimonialsCarousel" data-bs-interval="5000">
                             <div class="tesimonialsCaption">
                                 <p>
                                     <i class="fa-solid fa-quote-left"></i>
@@ -437,10 +437,10 @@
                                 </p>
                             </div>
                             <img src="./images/testimonials/testimonials-2.jpg" class="" alt="...">
-                            <h4></h4>
-                            <h5></h5>
+                            <h3>Sara Wilsson</h3>
+                            <h4>Designer</h4>
                           </div>
-                          <div class="carousel-item tesimonialsCarousel">
+                          <div class="carousel-item tesimonialsCarousel" data-bs-interval="5000">
                             <div class="tesimonialsCaption">
                                 <p>
                                     <i class="fa-solid fa-quote-left"></i>
@@ -449,8 +449,8 @@
                                 </p>
                             </div>
                             <img src="./images/testimonials/testimonials-3.jpg" class="" alt="...">
-                            <h4></h4>
-                            <h5></h5>
+                            <h3>Jena Karlis</h3>
+                            <h4>Store Owner</h4>
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -467,8 +467,38 @@
                 <h2>Contact</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam accusantium magnam earum id perferendis impedit vel possimus, 
                     necessitatibus cum inventore dolore odit sed aliquam nemo numquam dignissimos reiciendis ducimus minus.</p>
-                <div></div>
-                <div></div>
+                <div>
+                    <div class="contactInfo">
+                        <div class="contactDetails">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h4>Location:</h4>
+                            <p>A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                        <div class="contactDetails">
+                            <i class="fa-regular fa-envelope"></i>
+                            <h4>Email:</h4>
+                            <p>info@example.com</p>
+                        </div>
+                        <div class="contactDetails">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <h4>Call:</h4>
+                            <p>+1 5589 55488 55s</p>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <form action="">
+                            <label for="name">Your Name</label>
+                            <input type="text">
+                            <label for="email">Your Email</label>
+                            <input type="email">
+                            <label for="subject">Subject</label>
+                            <input type="text">
+                            <label for="message">Message</label>
+                            <input type="textbox">
+                            <button>Send Message</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="footer">
