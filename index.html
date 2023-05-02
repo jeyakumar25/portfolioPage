@@ -469,32 +469,52 @@
                     necessitatibus cum inventore dolore odit sed aliquam nemo numquam dignissimos reiciendis ducimus minus.</p>
                 <div>
                     <div class="contactInfo">
-                        <div class="contactDetails">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <h4>Location:</h4>
-                            <p>A108 Adam Street, New York, NY 535022</p>
+                        <div>
+                            <div class="contactIcon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="contactDetails">
+                                <h4>Location:</h4>
+                                <p>A108 Adam Street, New York, NY 535022</p>
+                            </div>
                         </div>
-                        <div class="contactDetails">
-                            <i class="fa-regular fa-envelope"></i>
-                            <h4>Email:</h4>
-                            <p>info@example.com</p>
+                        <div>
+                            <div class="contactIcon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="contactDetails">
+                                <h4>Email:</h4>
+                                <p>info@example.com</p>
+                            </div>
                         </div>
-                        <div class="contactDetails">
-                            <i class="fa-solid fa-mobile-screen"></i>
-                            <h4>Call:</h4>
-                            <p>+1 5589 55488 55s</p>
+                        <div>
+                            <div class="contactIcon">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                            </div>
+                            <div class="contactDetails">
+                                <h4>Call:</h4>
+                                <p>+1 5589 55488 55s</p>
+                            </div>
                         </div>
                     </div>
                     <div class="feedback">
                         <form action="">
-                            <label for="name">Your Name</label>
-                            <input type="text">
-                            <label for="email">Your Email</label>
-                            <input type="email">
-                            <label for="subject">Subject</label>
-                            <input type="text">
-                            <label for="message">Message</label>
-                            <input type="textbox">
+                            <div class="inlineInput">
+                                <label for="name">Your Name</label>
+                                <input type="text" class="form-control feedbackData" required="">
+                            </div>
+                            <div class="inlineInput">
+                                <label for="email">Your Email</label>
+                                <input type="email" class="form-control feedbackData" required="">
+                            </div>
+                            <div class="blockInput">
+                                <label for="subject">Subject</label>
+                                <input type="text" class="form-control feedbackData" required="">
+                            </div>
+                            <div class="blockInput">
+                                <label for="message">Message</label>
+                                <textarea class="form-control feedbackData" name="message" rows="10" required=""></textarea>
+                            </div>
                             <button>Send Message</button>
                         </form>
                     </div>
