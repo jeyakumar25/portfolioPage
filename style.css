@@ -3,24 +3,45 @@ body{
     font-family: "Open Sans", sans-serif;
     line-height: 1.5;
     font-size: 1rem;
+    color: #272829;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif;;
 }
 
-.header {
-    box-sizing: border-box;
-    width: 300px;
-    height: 100vh;
-    padding: 10px;
-    background-color: #040b14;
-    color: white;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 999;
-    overflow: auto;
+@media only screen and (max-width: 1199px) {
+    .header {
+        width: 300px;
+        height: 100%;
+        padding: 10px;
+        background-color: #040b14;
+        color: white;
+        position: fixed;
+        left: -300px;
+        top: 0;
+        bottom: 0;
+        z-index: 999;
+        overflow: auto;
+        transition: all ease-in-out 0.5s;
+    }
+}
+
+@media only screen and (min-width: 1199px) {
+    .header {
+        width: 300px;
+        height: 100%;
+        padding: 10px;
+        background-color: #040b14;
+        color: white;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 999;
+        overflow: auto;
+        transition: all ease-in-out 0.5s;
+    }
 }
 
 .profile{
@@ -860,14 +881,33 @@ form {
 
 .inlineInput {
     width: 50%;
-    padding: 0 12px;
+    padding: 0 12px 8px 12px;
+    margin-bottom: 15px;
 }
 
 .blockInput {
     width: 100%;
-    padding: 0 12px;
+    padding: 0 12px 8px 12px;
+    margin-bottom: 15px;
 }
 
 .feedbackData:focus  {
     box-shadow: none;
+}
+
+.feedback label {
+    margin-bottom: 8px;
+}
+
+.feedback button {
+    color: white;
+    background-color: #149ddd;
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 24px;
+    transition: 0.4s;
+}
+
+.feedback button:hover {
+    background-color: #37b3ed;
 }
